@@ -13,3 +13,21 @@ function processArray(arr) {
 const numberArray = [10, 21, 32, 43, 54, 1000, 2, -45];
 const processedArray = processArray(numberArray);
 console.log(processedArray);
+
+function formatArrayStrings(strings, numbers) {
+    let formattedStrings = [];
+    for (let i = 0; i < strings.length; i++) {
+        if (numbers[i] % 2 === 0) {
+            formattedStrings.push(strings[i].toUpperCase());
+        } else {
+            formattedStrings.push(strings[i].toLowerCase());
+        }
+    }
+    return formattedStrings;
+}
+
+
+const stringArray = ["Hello", "World", "JavaScript", "Coding", "Owusu", "Learning", "paul", "Git"];
+const processedNumbers = processArray([10, 21, 32, 43, 54, 1000, 2, -45,]); 
+const formattedStrings = formatArrayStrings(stringArray, processedNumbers);
+console.log(formattedStrings);
